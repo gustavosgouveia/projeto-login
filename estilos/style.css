@@ -100,6 +100,7 @@ input{
     font-size: 1em;
     border: 1px solid #5a8b8a;
     color: #2a5e5c;
+    background-color: white;
 }
 
 #entrar:hover{
