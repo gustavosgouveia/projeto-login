@@ -1,66 +1,56 @@
 @charset "UTF-8";
 
-/*Typical Device Breakpoints
------------------------------
-Celulares pequenos: até 600px
-Celulares maiores: de 600px até 768px
-Tablet: de 768px até 992px
-Desktop, notebooks: de 992px até 1200px
-Grandes monitores, tvs e etc: acima de 1200px 
-*/
-
-@media screen and (min-width: 768px){
-    html, body{
-        background-image: linear-gradient(to bottom, #5F2C82, #94CFCD);
+@media screen and (min-width: 768px) {
+    main{
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
     }
-    section{
+
+    section#login{
         width: 80vw;
-        height: 300px;   
-    }
-    #imagem{
-    float: left;
-    width: 30%;
-    height: 100%;
+        height: 300px;
     }
 
-    #formulario{
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
         float: right;
         width: 70%;
     }
 
-    .caixas{
-        width: 95%;
-    }
-    input{
-        width: 90%;
-    }
-    #entrar{
-        width: 95%;
-        margin: 10px;
-    }
-    #esqueciSenha{
-        width: 95%;
-        margin: 10px;
+    div .campo > input {
+        width: calc(100% - 44.5px);
+        transform: translateY(-10px);
     }
 }
 
 @media screen and (min-width: 992px) {
-    
-    section{
-        width: 950px;
-        height: 350px;
+    main{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    
-    h1{
-        margin-top: 15px;
-    }
-    #imagem{
-        float: right;
-        width: 50%;
-    }
-    #formulario {
-        float: left;
-        width: 50%;
 
- }
+        section#login{
+            width: 950px;
+            height: 350px;
+        }
+
+        section#login > div#imagem{
+            float: right;
+            width: 50%;
+        }
+
+        section#login > div#formulario{
+            float: left;
+            width: 50%;
+        }
+        div#formulario > h1 {
+            font-size: 2em;
+        }
+        div#formulario > p {
+            font-size: 1em;
+            margin: 20px 0px;
+        }
 }
